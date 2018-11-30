@@ -1,0 +1,59 @@
+/* Spez News Web application */
+
+html {
+	font-family: 'Karla', sans-serif;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0px;
+}
+p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#header {
+	max-height: 35px;
+	z-index: 100;
+	color: #F5F5F5;
+	background-color: #FF5F5F;
+	top: 0;
+	position:sticky;
+	width: auto;
+	padding: 5px 24px;
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+
+#header-btn {
+	color: #F5F5F5!important;
+}
+
+a {
+	font-weight: 700;
+	color: #3bb0b2 !important;
+}
+
+.rss-item {
+	color: c5c5c5;
+	list-style-image: none;
+	list-style: none;
+	list-style-type: none;
+}
+
+.rss-date {
+	color: #353535;
+}
+
+ul {
+	padding: 4px 24px;
+}
+
+iframe {
+	border: none;
+	width: 100%;
+	height: calc(100vh - 35px - 10px);
+	overflow:hidden
+}
