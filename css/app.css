@@ -34,14 +34,11 @@ a {
 	color: #3bb0b2 !important;
 }
 
-.rssdog {
+.feedEkList {
 	color: c5c5c5;
 	list-style-image: none;
 	list-style: none;
 	list-style-type: none;
-}
-
-table {
 	padding: 24px;
 }
 
