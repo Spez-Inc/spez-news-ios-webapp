@@ -1,3 +1,7 @@
+function onready() {
+	document.getElementById('web-iframe').src = 'about:blank';
+}
+
 function linkclicked() {
 	document.getElementById('news-list').style.display = 'none';
 	document.getElementById('web-iframe').style.display = 'block';
@@ -30,4 +34,11 @@ function hidemenu() {
 	document.getElementById('dialogback-menu').style.visibility = "hidden";
 	document.getElementsByClassName("back")[0].setAttribute("onclick", "menuclicked();");
 	document.getElementsByClassName("back")[0].innerHTML = "&#9776;";
+}
+
+function showpage(pageid) {
+	document.getElementById('feed-page').style.display = "none";
+	document.getElementById('about-page').style.display = "none";
+	document.getElementById(pageid + '-page').style.display = "block";
+	hidemenu();
 }
