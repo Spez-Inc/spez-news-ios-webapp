@@ -1,8 +1,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Spez News</title>
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 	<link href="./css/app.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	
 	<link rel="apple-touch-icon" href="img/iphone_home120.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="img/iphone_home120.png">
@@ -80,6 +81,27 @@
                 and (-webkit-device-pixel-ratio: 1)"
          rel="apple-touch-startup-image">
 </head>
+
+<script>
+	if (window.navigator.standalone) {
+
+$(document).on(
+    "click",
+    "a",
+    function (event) {
+
+        event.preventDefault();
+
+        var aurl = $(event.target).attr("href");
+        if (aurl) {
+            location.href = $(event.target).attr("href");
+        }
+        else {
+            location.href = this;
+        }
+    }
+);
+</script>
 
 <body onload="onready();">
 	<div id="header">
