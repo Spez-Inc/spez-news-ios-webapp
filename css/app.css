@@ -33,11 +33,11 @@ span {
 	width: 100%;
 	z-index: 98;
 	position: fixed;
-	transition: visibility 0.5s, opacity 0.5s linear;
-	-webkit-transition: visibility 0.5s, opacity 0.5s linear;
-	-moz-transition: visibility 0.5s, opacity 0.5s linear;
-	-ms-transition: visibility 0.5s, opacity 0.5s linear;
-	-o-transition: visibility 0.5s, opacity 0.5s linear;
+	transition: visibility 0.5s, opacity 0.5s;
+	-webkit-transition: visibility 0.5s, opacity 0.5s;
+	-moz-transition: visibility 0.5s, opacity 0.5s;
+	-ms-transition: visibility 0.5s, opacity 0.5s;
+	-o-transition: visibility 0.5s, opacity 0.5s;
 	height: 100vh;
 }
 
@@ -51,10 +51,10 @@ span {
 	visibility: hidden;
 	left: -256px;
 	transition: left 0.5s;
-	-webkit-transition: left 0.5s linear;
-	-moz-transition: left 0.5s linear;
-	-ms-transition: left 0.5s linear;
-	-o-transition: left 0.5s linear;
+	-webkit-transition: left 0.5s;
+	-moz-transition: left 0.5s;
+	-ms-transition: left 0.5s;
+	-o-transition: left 0.5s;
 }
 
 #header-btn {
