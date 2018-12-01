@@ -34,6 +34,10 @@ span {
 	z-index: 98;
 	position: fixed;
 	transition: visibility 0.5s, opacity 0.5s linear;
+	-webkit-transition: visibility 0.5s, opacity 0.5s linear;
+	-moz-transition: visibility 0.5s, opacity 0.5s linear;
+	-ms-transition: visibility 0.5s, opacity 0.5s linear;
+	-o-transition: visibility 0.5s, opacity 0.5s linear;
 	height: 100vh;
 }
 
@@ -47,6 +51,10 @@ span {
 	visibility: hidden;
 	left: -256px;
 	transition: left 0.5s;
+	-webkit-transition: left 0.5s linear;
+	-moz-transition: left 0.5s linear;
+	-ms-transition: left 0.5s linear;
+	-o-transition: left 0.5s linear;
 }
 
 #header-btn {
