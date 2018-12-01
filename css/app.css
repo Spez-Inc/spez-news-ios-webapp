@@ -23,7 +23,7 @@ p {
 	-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-	font-size: 32px !important;
+	font-size: 48px !important;
 }
 
 #header-btn {
@@ -50,6 +50,6 @@ table {
 iframe {
 	border: none;
 	width: 100%;
-	height: calc(100vh - 53px - 10px);
+	height: calc(100vh - 72px - 10px);
 	overflow:hidden
 }
