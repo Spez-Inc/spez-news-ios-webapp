@@ -39,7 +39,7 @@ function hidemenu() {
 function showpage(pageid) {
 	var elements = document.getElementsByClassName('page');
 	for (var i = 0; i < elements.length; i++) {
-		document.getElementById('feed-page').style.display = "none";
+		elements[i].style.display = "none";
 	}
 	
 	document.getElementById(pageid + '-page').style.display = "block";
