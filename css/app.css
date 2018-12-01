@@ -3,7 +3,6 @@
 html {
 	font-family: 'Karla', sans-serif;
 	overflow-x: hidden;
-	
 }
 
 body {
@@ -53,7 +52,6 @@ ul {
 
 iframe {
 	border: none;
-	width: 100%;
 	height: calc(100vh - 35px - 10px);
 	overflow:hidden
 }
