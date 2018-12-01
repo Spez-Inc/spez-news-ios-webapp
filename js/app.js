@@ -37,8 +37,11 @@ function hidemenu() {
 }
 
 function showpage(pageid) {
-	document.getElementById('feed-page').style.display = "none";
-	document.getElementById('about-page').style.display = "none";
+	var elements = document.getElementsByClassName('page');
+	for (var i = 0; i < elements.length; i++) {
+		document.getElementById('feed-page').style.display = "none";
+	}
+	
 	document.getElementById(pageid + '-page').style.display = "block";
 	hidemenu();
 }
