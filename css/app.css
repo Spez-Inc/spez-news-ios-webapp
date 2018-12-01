@@ -27,6 +27,28 @@ span {
 	box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
+#dialogback-menu {
+	opacity: 0;
+	background-color: #000000;
+	width: 100%;
+	z-index: 98;
+	position: fixed;
+	transition: visibility 0.5s, opacity 0.5s linear;
+	height: 100vh;
+}
+
+#menu {
+	z-index: 99;
+	opacity: 1 !important;
+	background-color: #f5f5f5;
+	width: 256px;
+	height: 100vh;
+	position: fixed;
+	visibility: hidden;
+	left: -256px;
+	transition: left 0.5s;
+}
+
 #header-btn {
 	color: #F5F5F5!important;
 }

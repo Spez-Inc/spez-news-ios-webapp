@@ -14,3 +14,20 @@ function backclicked() {
 	document.getElementsByClassName("back")[0].innerHTML = "&#9776;";
 	document.getElementsByClassName("back")[0].setAttribute("onclick", "menuclicked();");
 }
+
+function menuclicked() {
+	document.getElementById('dialogback-menu').style.visibility = "visible";
+	document.getElementById('dialogback-menu').style.opacity = "0.5";
+	document.getElementById('menu').style.visibility = "visible";
+	document.getElementById('menu').style.left = "0px";
+	document.getElementsByClassName("back")[0].setAttribute("onclick", "hidemenu();");
+	document.getElementsByClassName("back")[0].innerHTML = "<";
+}
+
+function hidemenu() {
+	document.getElementById('menu').style.left = "-256px";
+	document.getElementById('dialogback-menu').style.opacity = "0";
+	document.getElementById('dialogback-menu').style.visibility = "hidden";
+	document.getElementsByClassName("back")[0].setAttribute("onclick", "menuclicked();");
+	document.getElementsByClassName("back")[0].innerHTML = "&#9776;";
+}
