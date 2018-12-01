@@ -1,5 +1,3 @@
-document.width = screen.width;
-
 function linkclicked() {
 	document.getElementById('news-list').style.display = 'none';
 	document.getElementById('web-iframe').style.display = 'block';

@@ -3,7 +3,7 @@
 html {
 	font-family: 'Karla', sans-serif;
 	overflow-x: hidden;
-	
+	position: responsive;
 }
 
 body {
@@ -21,7 +21,6 @@ p {
 	background-color: #FF5F5F;
 	top: 0;
 	position:sticky;
-	width: auto;
 	padding: 5px 24px;
 	-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
@@ -54,7 +53,6 @@ ul {
 
 iframe {
 	border: none;
-	width: 100%;
 	height: calc(100vh - 35px - 10px);
 	overflow:hidden
 }
