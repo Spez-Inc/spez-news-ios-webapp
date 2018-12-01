@@ -23,6 +23,8 @@
 		<p> <a onclick="backclicked();" class="back" id="header-btn"></a> <b>Spez News</b> <a id="header-btn" class="reload" style="float: right;" onclick="window.location.reload();">&#x21bb;</a></p>
 	</div>
 	
+	<script>var docwidth = document.getElementById("header").clientWidth;</script>
+	
 	<div id="news-list">
 		<div class="rssDiv">
 			<div id="divRss"></div>
@@ -40,6 +42,7 @@
 			elements[i].setAttribute('onclick', 'linkclicked();');
 		}
 		document.getElementsByTagName('tbody')[0].innerHTML += '<meta name="viewport" content="width=1280, initial-scale=1">';
+		document.getElementById('divRss').setAttribute("style", "max-width: " + docwidth + "px !important;");
 		
 	</script>
 	
