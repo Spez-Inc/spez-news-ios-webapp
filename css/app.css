@@ -40,6 +40,7 @@ a {
 	list-style-image: none;
 	list-style: none;
 	list-style-type: none;
+	font-size: 8px !important;
 }
 
 table {
