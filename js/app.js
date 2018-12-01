@@ -1,9 +1,11 @@
 function onready() {
 	document.getElementById('web-iframe').src = 'about:blank';
+	hidemenu();
 }
 
-function linkclicked() {
+function linkclicked(url) {
 	document.getElementById('news-list').style.display = 'none';
+	document.getElementById('web-iframe').src = url;
 	document.getElementById('web-iframe').style.display = 'block';
 	document.getElementsByClassName('reload')[0].innerHTML = "";
 	document.getElementsByClassName("back")[0].innerHTML = "<";
