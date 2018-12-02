@@ -47,3 +47,9 @@ function showpage(pageid) {
 	document.getElementById(pageid + '-page').style.display = "block";
 	hidemenu();
 }
+
+function launchinsafari() {
+	var iframeurl = document.getElementById("web-iframe").src;
+	window.open(iframeurl);
+	hidedropmenu(0);
+}

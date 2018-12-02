@@ -82,27 +82,6 @@
          rel="apple-touch-startup-image">
 </head>
 
-<script>
-	if (window.navigator.standalone) {
-
-$(document).on(
-    "click",
-    "a",
-    function (event) {
-
-        event.preventDefault();
-
-        var aurl = $(event.target).attr("href");
-        if (aurl) {
-            location.href = $(event.target).attr("href");
-        }
-        else {
-            location.href = this;
-        }
-    }
-);
-</script>
-
 <body onload="onready();">
 	<div id="header">
 		<span><button style="margin-right: 16px; width: 12px !important; height: 14px !important; background: none; border: none; padding: 0px;" onclick="menuclicked();" class="back" id="header-btn">&#9776;</button><b>Spez News</b> <button style="margin-right: 16px; width: 12px !important; height: 14px !important; background: none; border: none; padding: 0px; float: right; font-size: 14px;"id="header-btn" class="reload" onclick="window.location.reload();">&#x21bb;</a></span>
@@ -111,18 +90,18 @@ $(document).on(
 	<div id="dialogback-menu" onclick="hidemenu();"></div>
 	
 	<div id="menu">
-		<button class="menu-button" id="mb-1" onclick="showpage('feed');">Feed</button>
-		<button class="menu-button" id="mb-2" onclick="showpage('about');">About</button>
+		<button class="menu-button" id="mb-1" onclick="showpage('feed'); document.getElementsByClassName('reload')[0].innerHTML = '&#x21bb';">Feed</button>
+		<button class="menu-button" id="mb-2" onclick="showpage('about'); document.getElementsByClassName('reload')[0].innerHTML = '';">About</button>
 	</div>
 	
 	<div id="feed-page" class="page">
 		<div id="news-list">
-		<script type="text/javascript" language="javascript" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Frss&amp;mode=javascript&amp;showonly=&amp;maxitems=0&amp;showdescs=1&amp;desctrim=0&amp;descmax=0&amp;tabwidth=100%25&amp;linktarget=_blank&amp;textsize=inherit&amp;bordercol=transparent&amp;headbgcol=transparent&amp;headtxtcol=transparent&amp;titlebgcol=transparent&amp;titletxtcol=%23000000&amp;itembgcol=transparent&amp;itemtxtcol=%23000000&amp;ctl=0">
-		</script>
+			<script type="text/javascript" language="javascript" src="https://www.rssdog.com/index.php?url=https%3A%2F%2Fnews.google.com%2Frss&amp;mode=javascript&amp;showonly=&amp;maxitems=0&amp;showdescs=1&amp;desctrim=0&amp;descmax=0&amp;tabwidth=100%25&amp;linktarget=_blank&amp;textsize=inherit&amp;bordercol=transparent&amp;headbgcol=transparent&amp;headtxtcol=transparent&amp;titlebgcol=transparent&amp;titletxtcol=%23000000&amp;itembgcol=transparent&amp;itemtxtcol=%23000000&amp;ctl=0">
+			</script>
 			<noscript> You apparently do not have JavaScript enabled on your browser lest you would be viewing an RSS Feed here from <a href="//rssdog.com/">RSS Dog</a> </noscript>
 		</div>
 	
-		<iframe style="display: none;" name="web-iframe" id="web-iframe">Please Wait...</iframe>
+		<iframe name="web-iframe" id="web-iframe">Please Wait...</iframe>
 		
 		<script>
 			var elements = document.getElementsByTagName('a');
@@ -136,7 +115,12 @@ $(document).on(
 	
 	<div id="about-page" class="page" style="display: none;">
 		<center>
-			<img alt="Spez News icon" src="./img/iphone_home120.png" width="120px" height="120px;"></img>
+			<div id="center">
+				<img alt="Spez News icon" src="./img/iphone_home120.png" width="120px" height="120px;"></img>
+				<h3 style="font-weight: 400;"><b>Spez News</b> for iOS</h3>
+				<p>Version: 2.0</p>
+			</div>
+			<p style="font-size: 8px; position: fixed; bottom: 10px; font-align: center; width: 100%;">&copy; 2019 Spez Inc. Some Rights Reserved.</p>
 		</center>
 	</div>
 </body>
